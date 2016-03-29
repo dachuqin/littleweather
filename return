@@ -1,0 +1,49 @@
+[1mdiff --git a/.idea/misc.xml b/.idea/misc.xml[m
+[1mindex efbef40..852cb91 100644[m
+[1m--- a/.idea/misc.xml[m
+[1m+++ b/.idea/misc.xml[m
+[36m@@ -1,5 +1,29 @@[m
+ <?xml version="1.0" encoding="UTF-8"?>[m
+ <project version="4">[m
+[32m+[m[32m  <component name="NullableNotNullManager">[m
+[32m+[m[32m    <option name="myDefaultNullable" value="android.support.annotation.Nullable" />[m
+[32m+[m[32m    <option name="myDefaultNotNull" value="android.support.annotation.NonNull" />[m
+[32m+[m[32m    <option name="myNullables">[m
+[32m+[m[32m      <value>[m
+[32m+[m[32m        <list size="4">[m
+[32m+[m[32m          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />[m
+[32m+[m[32m          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nullable" />[m
+[32m+[m[32m          <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />[m
+[32m+[m[32m          <item index="3" class="java.lang.String" itemvalue="android.support.annotation.Nullable" />[m
+[32m+[m[32m        </list>[m
+[32m+[m[32m      </value>[m
+[32m+[m[32m    </option>[m
+[32m+[m[32m    <option name="myNotNulls">[m
+[32m+[m[32m      <value>[m
+[32m+[m[32m        <list size="4">[m
+[32m+[m[32m          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />[m
+[32m+[m[32m          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />[m
+[32m+[m[32m          <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />[m
+[32m+[m[32m          <item index="3" class="java.lang.String" itemvalue="android.support.annotation.NonNull" />[m
+[32m+[m[32m        </list>[m
+[32m+[m[32m      </value>[m
+[32m+[m[32m    </option>[m
+[32m+[m[32m  </component>[m
+   <component name="ProjectLevelVcsManager" settingsEditedManually="false">[m
+     <OptionsSetting value="true" id="Add" />[m
+     <OptionsSetting value="true" id="Remove" />[m
+[1mdiff --git a/app/src/main/res/layout/content_main.xml b/app/src/main/res/layout/content_main.xml[m
+[1mindex 1128043..7417a9e 100644[m
+[1m--- a/app/src/main/res/layout/content_main.xml[m
+[1m+++ b/app/src/main/res/layout/content_main.xml[m
+[36m@@ -16,4 +16,8 @@[m
+         android:layout_width="wrap_content"[m
+         android:layout_height="wrap_content"[m
+         android:text="Hello World!" />[m
+[32m+[m
+[32m+[m[32m    <Button[m
+[32m+[m[32m        android:layout_width="wrap_content"[m
+[32m+[m[32m        android:layout_height="wrap_content" />[m
+ </RelativeLayout>[m
+warning: LF will be replaced by CRLF in .idea/misc.xml.
+The file will have its original line endings in your working directory.
