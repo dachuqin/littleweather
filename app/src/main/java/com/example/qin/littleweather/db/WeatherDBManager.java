@@ -51,7 +51,7 @@ public class WeatherDBManager {
      * 读取Province表所有数据
      * @return
      */
-    public List<Province> loadProvince(){
+    public List<Province> loadProvinces(){
         List<Province> list = new ArrayList<Province>();
         Cursor cursor = sqLiteDatabase.query("Province",null,null,null,null,null,null);
         if (cursor.moveToNext()){
@@ -84,9 +84,10 @@ public class WeatherDBManager {
      * 读取City表所有数据
      * @return
      */
-    public List<City> loadCity(){
+    public List<City> loadCities(int provinceId){
         List<City> list = new ArrayList<City>();
-        Cursor cursor = sqLiteDatabase.query("City",null,null,null,null,null,null);
+        Cursor cursor = sqLiteDatabase.query("City",null,"province_id = ?",
+                new String[]{String.valueOf(provinceId)},null,null,null);
         if (cursor.moveToNext()){
             do {
                 City city = new City();
@@ -117,9 +118,10 @@ public class WeatherDBManager {
      * 读取City表所有数据
      * @return
      */
-    public List<County> loadCounty(){
+    public List<County> loadCounties(int cityId){
         List<County> list = new ArrayList<County>();
-        Cursor cursor = sqLiteDatabase.query("County",null,null,null,null,null,null);
+        Cursor cursor = sqLiteDatabase.query("County",null,"city_id = ?",
+                new String[]{String.valueOf(cityId)},null,null,null);
         if (cursor.moveToNext()){
             do {
                 County ounty = new County();
